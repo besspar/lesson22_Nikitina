@@ -43,3 +43,26 @@ class Person:
 
 # TODO после выполнения задания попробуйте
 # сделать экземпляр класса person и вызвать новые методы.
+class Person_1:
+    def __init__(self, country, city, street, room, building, city_population):
+        self.country = country
+        self.city = city
+        self.street = street
+        self.building = building
+        self.room = room
+        self.city_population = city_population
+
+    def get_country(self):
+        return self.country
+
+    def get_city(self):
+        return self.city
+
+    def get_city_population(self):
+        return self.city_population
+
+    def get_room(self):
+        return self.room
+
+    def get_full_address(self):
+        return f"{self.country}, {self.city}, {self.street}, {self.building}, {self.room}"
